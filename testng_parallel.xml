@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Flipkart Functional Tests" parallel="tests" thread-count="3">
+	<listeners>
+		<listener class-name="com.flipkart.listeners.TestListener" />
+	</listeners>
+    <test name="Search And Validate PRoduct Test">
+        <classes>
+            <class name="com.flipkart.tests.SearchProductAndValidateTest"/>
+        </classes>
+    </test>
+    <test name="Filter by Price">
+        <classes>
+            <class name="com.flipkart.tests.VerifyProductTitleNewTabTest"/>
+        </classes>
+    </test>
+    <test name="Non-Existent Product">
+        <classes>
+            <class name="com.flipkart.tests.SearchNonExistentProductTest"/>
+        </classes>
+    </test>
+</suite>

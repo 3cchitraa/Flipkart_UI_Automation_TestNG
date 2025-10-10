@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Flipkart Parallel Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Flipkart Test 2(failed)">
+    <classes>
+      <class name="com.flipkart.tests.SearchProductAndValidateTest">
+        <methods>
+          <include name="setUpReport"/>
+          <include name="setUpDriver"/>
+          <include name="searchProductAndValidateTop3Titles" invocation-numbers="0 1"/>
+          <include name="tearDownDriver"/>
+          <include name="tearDownReport"/>
+        </methods>
+      </class> <!-- com.flipkart.tests.SearchProductAndValidateTest -->
+    </classes>
+  </test> <!-- Flipkart Test 2(failed) -->
+</suite> <!-- Failed suite [Flipkart Parallel Test Suite] -->

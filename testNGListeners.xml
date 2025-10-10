@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Flipkart Test Suite">
+	<listeners>
+		<listener class-name="com.flipkart.listeners.TestListener" />
+	</listeners>
+	<!--<test name="Add to Cart And VErify Cart Count">
+		<classes>
+			<class name="com.flipkart.tests.AddToCartTest" />
+		</classes>
+	</test>-->
+	 <test name="Sort by Price -Low to High">
+		<classes>
+			<class name="com.flipkart.tests.FilterProductsByPriceTest" />
+		</classes>
+	</test>
+</suite>
+
+
+
+
